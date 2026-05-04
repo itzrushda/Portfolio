@@ -9,14 +9,16 @@
 <body>
     <div class="container">
         <nav class="navbar">
-             <img src="./circle-user.svg" arg="" class="logo">
-            <ul>
+                <span class="hide">
+             <img src="./circle-user.svg" arg="" class="logo" id="logo">
+            <ul id="vanish">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            </span>
         </nav>
 
         <section class="home id="home"">
@@ -133,5 +135,18 @@
         <span class="cont">LinkedIn : <a href="https://www.linkedin.com/in/rushda-salmani-6b4203372">Rushda Salmani</a></span>
 </section>
     </div>
+    <script>
+        const logo = document.getElementById("logo");
+        const nav = document.getElementById("vanish");
+           
+                logo.addEventListener("click",()=>{
+            if(nav.style.display == "none"){
+                nav.style.display = "block";
+            }else{
+                nav.style.display = "none";
+            }
+        
+        });
+    </script>
 </body>
 </html>
