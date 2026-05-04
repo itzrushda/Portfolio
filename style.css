@@ -74,12 +74,6 @@ body {
         display: flex;
         flex-direction: column;
     }
-    .hide{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        display: inline;
-    }
 }
 
 .navbar ul li a:hover {
